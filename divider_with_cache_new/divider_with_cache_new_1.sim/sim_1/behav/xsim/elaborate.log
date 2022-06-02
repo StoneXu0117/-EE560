@@ -1,0 +1,54 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado_2019.2/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ab30ea5d2e904e11ba38ceaf48382c28 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot divider_with_cache_top_behav xil_defaultlib.divider_with_cache_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/wrk/2019.2/continuous/2019_11_06_2708876/data/verilog/src/unisims/IBUF.v" Line 29. Module IBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2019.2/continuous/2019_11_06_2708876/data/verilog/src/unisims/OBUF.v" Line 25. Module OBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx_projects/divider_with_cache_new/rst_gen.v" Line 26. Module rst_gen has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx_projects/divider_with_cache_new/reset_bridge.v" Line 35. Module reset_bridge has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx_projects/divider_with_cache_new/uart_rx.v" Line 37. Module uart_rx(CLOCK_RATE=100000000) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx_projects/divider_with_cache_new/data_fifo_oneclk.v" Line 23. Module data_fifo_oneclk has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx_projects/divider_with_cache_new/meta_harden.v" Line 27. Module meta_harden has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx_projects/divider_with_cache_new/uart_baud_gen.v" Line 35. Module uart_baud_gen(BAUD_RATE=115200,CLOCK_RATE=100000000) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx_projects/divider_with_cache_new/uart_rx_ctl.v" Line 52. Module uart_rx_ctl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx_projects/divider_with_cache_new/uart_tx.v" Line 34. Module uart_tx(BAUD_RATE=115200,CLOCK_RATE=100000000) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx_projects/divider_with_cache_new/data_fifo_oneclk.v" Line 23. Module data_fifo_oneclk has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx_projects/divider_with_cache_new/uart_baud_gen.v" Line 35. Module uart_baud_gen(BAUD_RATE=115200,CLOCK_RATE=100000000) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx_projects/divider_with_cache_new/uart_tx_ctl.v" Line 60. Module uart_tx_ctl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture bufgp_v of entity unisim.BUFGP [bufgp_default]
+Compiling architecture debounce_rtl of entity xil_defaultlib.ee560_debounce_DPB_SCEN_CCEN_MCEN [ee560_debounce_dpb_scen_ccen_mce...]
+Compiling architecture debounce_rtl of entity xil_defaultlib.ee560_debounce_DPB_SCEN_CCEN_MCEN [\ee560_debounce_DPB_SCEN_CCEN_MC...]
+Compiling architecture behave of entity xil_defaultlib.cam [\cam(width=16)\]
+Compiling architecture behave of entity xil_defaultlib.lru [lru_default]
+Compiling architecture inferrable of entity xil_defaultlib.spram [\spram(data_width=16,addr_width=...]
+Compiling architecture behave of entity xil_defaultlib.cache [\cache(width=16)\]
+Compiling architecture divider_with_cache_rtl of entity xil_defaultlib.divider_with_cache [divider_with_cache_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module xil_defaultlib.reset_bridge
+Compiling module xil_defaultlib.rst_gen
+Compiling module xil_defaultlib.data_fifo_oneclk
+Compiling module xil_defaultlib.meta_harden
+Compiling module xil_defaultlib.uart_baud_gen(BAUD_RATE=115200,C...
+Compiling module xil_defaultlib.uart_rx_ctl
+Compiling module xil_defaultlib.uart_rx(CLOCK_RATE=100000000)
+Compiling module xil_defaultlib.uart_tx_ctl
+Compiling module xil_defaultlib.uart_tx(BAUD_RATE=115200,CLOCK_R...
+Compiling module xil_defaultlib.IOExpansion(BAUD_RATE=115200,CLO...
+Compiling architecture divider_with_cache_top_arc of entity xil_defaultlib.divider_with_cache_top
+Built simulation snapshot divider_with_cache_top_behav

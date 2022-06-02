@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx_projects/divider_with_cache_new/IOExpansion_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IOExpansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx_projects/divider_with_cache_new/data_fifo_oneclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_fifo_oneclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx_projects/divider_with_cache_new/meta_harden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module meta_harden
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx_projects/divider_with_cache_new/reset_bridge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_bridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx_projects/divider_with_cache_new/rst_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rst_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx_projects/divider_with_cache_new/uart_baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx_projects/divider_with_cache_new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx_projects/divider_with_cache_new/uart_rx_ctl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx_ctl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx_projects/divider_with_cache_new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx_projects/divider_with_cache_new/uart_tx_ctl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_ctl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx_projects/divider_with_cache_new/divider_with_cache_new_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

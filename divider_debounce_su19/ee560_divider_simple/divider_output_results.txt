@@ -1,0 +1,5 @@
+ Dividend = 13; Divisor =  9;  Quotient =  1; Remainder =  4
+ Dividend = 11; Divisor = 10;  Quotient =  1; Remainder =  1
+ Dividend =  5; Divisor = 12;  Quotient =  0; Remainder =  5
+ Dividend =  9; Divisor =  2;  Quotient =  4; Remainder =  1
+ Dividend = 12; Divisor =  3;  Quotient =  4; Remainder =  0

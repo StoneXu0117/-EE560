@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../cache_generic.vhd" \
+"../../../../cam_generic.vhd" \
+"../../../../divider_with_cache.vhd" \
+"../../../../ee560_debounce_DPB_SCEN_CCEN_MCEN.vhd" \
+"../../../../lru_generic.vhd" \
+"../../../../spram.vhd" \
+"../../../../divider_with_cache_top.vhd" \
+
+# Do not sort compile order
+nosort

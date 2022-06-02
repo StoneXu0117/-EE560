@@ -1,0 +1,14 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx_projects/divider_with_cache_new/cache_generic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx_projects/divider_with_cache_new/cam_generic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cam'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx_projects/divider_with_cache_new/divider_with_cache.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'divider_with_cache'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx_projects/divider_with_cache_new/ee560_debounce_DPB_SCEN_CCEN_MCEN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ee560_debounce_DPB_SCEN_CCEN_MCEN'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx_projects/divider_with_cache_new/lru_generic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lru'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx_projects/divider_with_cache_new/spram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'spram'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx_projects/divider_with_cache_new/divider_with_cache_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'divider_with_cache_top'

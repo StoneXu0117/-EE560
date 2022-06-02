@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../IOExpansion_uart.v" \
+"../../../../data_fifo_oneclk.v" \
+"../../../../meta_harden.v" \
+"../../../../reset_bridge.v" \
+"../../../../rst_gen.v" \
+"../../../../uart_baud_gen.v" \
+"../../../../uart_rx.v" \
+"../../../../uart_rx_ctl.v" \
+"../../../../uart_tx.v" \
+"../../../../uart_tx_ctl.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

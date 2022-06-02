@@ -1,0 +1,117 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Jun  1 17:59:29 2022
+| Host         : StoneXu running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file divider_with_cache_top_control_sets_placed.rpt
+| Design       : divider_with_cache_top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    39 |
+|    Minimum number of control sets                        |    39 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    83 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    39 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |    14 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    22 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              16 |            6 |
+| No           | No                    | Yes                    |              39 |           16 |
+| No           | Yes                   | No                     |              34 |           11 |
+| Yes          | No                    | No                     |             215 |           46 |
+| Yes          | No                    | Yes                    |               8 |            3 |
+| Yes          | Yes                   | No                     |             149 |           44 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+----------------------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+| Clock Signal |                                Enable Signal                               |                      Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++--------------+----------------------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+|  BUF_GP_1/O  | IOExpansion_1/uart_tx_i0/uart_baud_gen_tx_i0/baud_x16_en                   | IOExpansion_1/uart_tx_i0/uart_tx_ctl_i0/txd_tx_i_1_n_0     |                1 |              1 |
+|  BUF_GP_1/O  | BtnU_debouncer/debounce_count[27]_i_1_n_0                                  |                                                            |                1 |              4 |
+|  BUF_GP_1/O  | IOExpansion_1/uart_rx_i0/data_fifo_i0/wr_pt0                               | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_0 |                2 |              4 |
+|  BUF_GP_1/O  | BtnL_debouncer/MCEN_count                                                  |                                                            |                1 |              4 |
+|  BUF_GP_1/O  | BtnU_debouncer/FSM_sequential_debounce_state[3]_i_1__0_n_0                 | BtnC_IBUF                                                  |                2 |              4 |
+|  BUF_GP_1/O  | IOExpansion_1/uart_rx_i0/data_fifo_i0/dwOutCounter_reg[0][0]               | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_0 |                1 |              4 |
+|  BUF_GP_1/O  | IOExpansion_1/uart_tx_i0/uart_tx_ctl_i0/over_sample_cnt[3]_i_1_n_0         | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_0 |                2 |              4 |
+|  BUF_GP_1/O  | IOExpansion_1/uart_tx_i0/uart_tx_ctl_i0/FSM_sequential_state[1]_i_1__1_n_0 | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_0 |                2 |              4 |
+|  BUF_GP_1/O  | IOExpansion_1/uart_tx_i0/data_fifo_i0/rd_pt0                               | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_0 |                1 |              4 |
+|  BUF_GP_1/O  | IOExpansion_1/uart_tx_i0/data_fifo_i0/wr_pt0                               | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_0 |                1 |              4 |
+|  BUF_GP_1/O  | IOExpansion_1/uart_rx_i0/uart_rx_ctl_i0/FSM_sequential_state[1]_i_1__0_n_0 | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_0 |                2 |              4 |
+|  BUF_GP_1/O  | IOExpansion_1/uart_rx_i0/data_fifo_i0/dwOutCounter_reg[1][0]               | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_0 |                1 |              4 |
+|  BUF_GP_1/O  | IOExpansion_1/uart_rx_i0/data_fifo_i0/rx_read_en                           | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_0 |                1 |              4 |
+|  BUF_GP_1/O  | IOExpansion_1/uart_rx_i0/data_fifo_i0/dwOutCounter_reg[0]_0[0]             | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_0 |                1 |              4 |
+|  BUF_GP_1/O  | BtnL_debouncer/FSM_sequential_debounce_state[3]_i_1_n_0                    | BtnC_IBUF                                                  |                1 |              4 |
+|  BUF_GP_1/O  | divider_with_cache_1/cache_inst/cam_inst/FSM_sequential_state_reg[2]       | divider_with_cache_1/q_int[7]_i_1_n_0                      |                3 |              8 |
+|  BUF_GP_1/O  | divider_with_cache_1/cache_inst/cam_inst/FSM_sequential_state_reg[2]       |                                                            |                2 |              8 |
+|  BUF_GP_1/O  | divider_with_cache_1/cache_inst/cam_inst/tag_we124_out                     |                                                            |                4 |             16 |
+|  BUF_GP_1/O  | divider_with_cache_1/cache_inst/cam_inst/tag_we121_out                     |                                                            |                4 |             16 |
+|  BUF_GP_1/O  | IOExpansion_1/uart_rx_i0/data_fifo_i0/p_1_in                               |                                                            |                2 |             16 |
+|  BUF_GP_1/O  | IOExpansion_1/uart_rx_i0/data_fifo_i0/E[0]                                 |                                                            |                2 |             16 |
+|  BUF_GP_1/O  | divider_with_cache_1/E[0]                                                  |                                                            |                4 |             16 |
+|  BUF_GP_1/O  | divider_with_cache_1/we_reg_n_0                                            |                                                            |                4 |             16 |
+|  BUF_GP_1/O  | divider_with_cache_1/cache_inst/cam_inst/tag_we123_out                     |                                                            |                4 |             16 |
+|  BUF_GP_1/O  | divider_with_cache_1/cache_inst/cam_inst/tag_we120_out                     |                                                            |                4 |             16 |
+|  BUF_GP_1/O  | IOExpansion_1/uart_tx_i0/data_fifo_i0/data_reg_0_7_0_5_i_1__0_n_0          |                                                            |                2 |             16 |
+|  BUF_GP_1/O  | divider_with_cache_1/cache_inst/cam_inst/tag[1][15]_i_1_n_0                |                                                            |                4 |             16 |
+|  BUF_GP_1/O  | divider_with_cache_1/cache_inst/cam_inst/tag_we122_out                     |                                                            |                3 |             16 |
+|  BUF_GP_1/O  | divider_with_cache_1/cache_inst/cam_inst/update_lru_stack                  |                                                            |                1 |             16 |
+|  BUF_GP_1/O  | divider_with_cache_1/cache_inst/cam_inst/tag[0][15]_i_1_n_0                |                                                            |                3 |             16 |
+|  BUF_GP_1/O  | divider_with_cache_1/cache_inst/cam_inst/tag_we1                           |                                                            |                4 |             16 |
+|  BUF_GP_1/O  |                                                                            |                                                            |                6 |             16 |
+|  BUF_GP_1/O  | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_1                 | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_0 |                4 |             17 |
+|  BUF_GP_1/O  | BtnL_debouncer/debounce_count                                              | BtnL_debouncer/debounce_count[22]_i_1_n_0                  |                7 |             23 |
+|  BUF_GP_1/O  | BtnU_debouncer/debounce_count                                              | BtnU_debouncer/debounce_count[27]_i_1_n_0                  |                8 |             28 |
+|  BUF_GP_1/O  | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_1                 |                                                            |                5 |             31 |
+|  BUF_GP_1/O  | IOExpansion_1/dwIn_reg[31]_i_1_n_0                                         | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_0 |                7 |             32 |
+|  BUF_GP_1/O  |                                                                            | IOExpansion_1/rst_gen_i0/reset_bridge_clk_i0/rst_dst_reg_0 |               11 |             34 |
+|  BUF_GP_1/O  |                                                                            | BtnC_IBUF                                                  |               16 |             39 |
++--------------+----------------------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+
+
